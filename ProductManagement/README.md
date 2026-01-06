@@ -22,11 +22,6 @@ A comprehensive Spring Boot application for managing products, orders, and user 
 - **HTTP Basic Authentication**
 - **Maven**
 
-## Prerequisites
-
-- Java 17 or higher
-- Maven 3.6+
-- MySQL 8.0+
 
 ## Database Schema
 
@@ -152,7 +147,7 @@ All endpoints except `/api/auth/**` require HTTP Basic Authentication. Include c
 Authorization: Basic <base64(username:password)>
 ```
 
-For example, if username is `john_doe` and password is `password123`, the header would be:
+For example, if username is `xyz` and password is `password123`, the header would be:
 ```
 Authorization: Basic am9obl9kb2U6cGFzc3dvcmQxMjM=
 ```
@@ -169,11 +164,11 @@ Most HTTP clients (Postman, curl, etc.) will automatically encode the credential
 **Request Body:**
 ```json
 {
-  "username": "john_doe",
+  "username": "user12",
   "password": "password123",
-  "email": "john@example.com",
-  "firstName": "John",
-  "lastName": "Doe"
+  "email": "user@example.com",
+  "firstName": "user",
+  "lastName": "abc"
 }
 ```
 
@@ -185,10 +180,10 @@ Most HTTP clients (Postman, curl, etc.) will automatically encode the credential
   "data": {
     "user": {
       "id": 1,
-      "username": "john_doe",
-      "email": "john@example.com",
-      "firstName": "John",
-      "lastName": "Doe",
+      "username": "user12",
+      "email": "user@example.com",
+      "firstName": "user",
+      "lastName": "abc",
       "enabled": true,
       "roles": ["USER"]
     },
@@ -209,10 +204,10 @@ Most HTTP clients (Postman, curl, etc.) will automatically encode the credential
   "message": "User retrieved successfully",
   "data": {
     "id": 1,
-    "username": "john_doe",
-    "email": "john@example.com",
-    "firstName": "John",
-    "lastName": "Doe",
+    "username": "user12",
+    "email": "user@example.com",
+    "firstName": "user",
+    "lastName": "abc",
     "enabled": true,
     "roles": ["USER"]
   }
