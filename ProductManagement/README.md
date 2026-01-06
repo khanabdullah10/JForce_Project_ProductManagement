@@ -590,27 +590,6 @@ curl -X POST http://localhost:8080/api/orders/checkout \
 
 ---
 
-## Project Structure
-
-```
-src/
-├── main/
-│   ├── java/com/productmanagement/
-│   │   ├── config/          # Configuration classes
-│   │   ├── controller/      # REST controllers
-│   │   ├── dto/            # Data Transfer Objects
-│   │   ├── entity/         # JPA entities
-│   │   ├── exception/      # Custom exceptions
-│   │   ├── repository/     # JPA repositories
-│   │   ├── service/        # Business logic
-│   │   └── util/           # Utility classes
-│   └── resources/
-│       └── application.properties
-└── pom.xml
-```
-
----
-
 ## Notes
 
 - The application uses HTTP Basic Authentication for secure access
